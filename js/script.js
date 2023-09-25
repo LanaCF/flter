@@ -11,7 +11,9 @@ function filterBadWord(str, arr) {
     
     for (let i = 0; i < arr.length; i++) {
         let filter = str.indexOf(arr[i]);
-        
+
+        console.log(filter); // Щоб бачити процес пошуку входу.
+
         while (filter !== -1) {
 
             str = str.replace(arr[i], '*'.repeat(arr[i].length));
